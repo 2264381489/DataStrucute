@@ -1,15 +1,29 @@
 package com.atguigu.tree;
 
+import com.mine.tree.ArrayTree;
+
 public class ArrBinaryTreeDemo {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
 		//创建一个 ArrBinaryTree
 		ArrBinaryTree arrBinaryTree = new ArrBinaryTree(arr);
-		arrBinaryTree.preOrder(); // 1,2,4,5,3,6,7
+		ArrayTree arrayTree=new ArrayTree(arr);
+		arrayTree.preOrder();
+//		arrBinaryTree.preOrder(); // 1,2,4,5,3,6,7
 	}
 
 }
+
+/**
+ * 4
+ * 2
+ * 5
+ * 1
+ * 6
+ * 3
+ * 7
+ */
 
 //编写一个ArrayBinaryTree, 实现顺序存储二叉树遍历
 
@@ -26,7 +40,7 @@ class ArrBinaryTree {
 	}
 	
 	//编写一个方法，完成顺序存储二叉树的前序遍历
-	/**
+	 /**
 	 * 
 	 * @param index 数组的下标 
 	 */
